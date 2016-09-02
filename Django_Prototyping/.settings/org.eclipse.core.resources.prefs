@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//Django_Prototyping/board/migrations/0001_initial.py=utf-8
+encoding//Django_Prototyping/board/model/models.py=utf-8
+encoding//Django_Prototyping/board/util/Const.py=utf-8
+encoding//Django_Prototyping/board/util/util.py=utf-8
+encoding//Django_Prototyping/board/view/detailView.py=utf-8
+encoding//Django_Prototyping/board/view/listView.py=utf-8
+encoding//Django_Prototyping/board/view/updateView.py=utf-8
+encoding//Django_Prototyping/board/view/writeView.py=utf-8
+encoding//Django_Prototyping/template/list.html=UTF-8
+encoding//Django_Prototyping/template/update.html=UTF-8
+encoding//Django_Prototyping/template/view.html=UTF-8
+encoding/<project>=UTF-8

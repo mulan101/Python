@@ -1,0 +1,33 @@
+ <html>
+  <head>
+  <title>글보기</title>
+  <script language="javascript">
+	function lfn_list() {
+		location.href = '/showList?current_page={{current_page}}&searchStr={{searchStr}}';
+	}
+
+    function lfn_modify() { 
+        location.href='/showUpdate?memo_id={{memo_id}}&current_page={{current_page}}&searchStr={{searchStr}}';
+    }
+
+    function lfn_delete() {
+        location.href='/doDelete?memo_id={{memo_id}}&current_page={{current_page}}';
+    }
+ </script>
+  </head>
+  <table cellspacing = 0 cellpadding = 5 border = 1 width=500>
+      <tr><td><b>조회수</b></td><td> {{ boardData.hits }} </td></tr>
+      <tr><td><b>이름 </b></td><td> {{ boardData.name }} </td></tr>
+      <tr><td><b>이메일 </b></td><td> {{ boardData.mail }} </td></tr>
+      <tr><td><b>제목 </b></td><td> {{ boardData.subject }} </td></tr>
+      <tr><td><b>내용 </b></td><td width=350> {{ boardData.memo }} </td></tr>
+  </table>
+
+  <table  cellspacing = 0 cellpadding = 0 border = 0 width=500>
+      <tr><td>
+          <input type=button value="수정" OnClick="javascript:lfn_modify()">
+          <input type=button value="목록" OnClick="javascript:lfn_list()">
+          <input type=button value="삭제" OnClick="javascript:lfn_delete()">
+      </td></tr>
+  </table>
+</html>
